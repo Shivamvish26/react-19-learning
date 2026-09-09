@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function LoginValidation() {
+export default function LoginValidation({ name }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -12,11 +12,11 @@ export default function LoginValidation() {
     console.log("password:", password);
     setEmail("");
     setPassword("");
-    setError(false);
+    setError(false);  
     setPasswordError(false);
   };
 
-function handleemail(e) {
+  function handleemail(e) {
     let item = e.target.value;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(item)) {
@@ -28,6 +28,9 @@ function handleemail(e) {
   }
   return (
     <>
+    {/* prop method */}
+      <h1>Hello {name} !</h1>
+
       <form onSubmit={handlelogin}>
         <input
           type="email"

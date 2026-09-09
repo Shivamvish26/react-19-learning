@@ -7,6 +7,7 @@ import Searchfilter from "./interview/searchfilter";
 import TodoList from "./interview/todolist";
 
 function App() {
+  const name = "Shubham"
 
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
   {/* <TodoList/> */}
   {/* <Searchfilter/> */}
   {/* <FetchApi/> */}
-  <LoginValidation/>
+  <LoginValidation name={name}/>
     </>
   );
 }
