@@ -16,6 +16,7 @@ import TodoList from "./interview/todolist";
 import Toggle from "./interview/toggle";
 import Wrapper from "./interview/wrapper";
 import Nestedloop from "./interview/Nestedloop";
+import Useeffecthook from "./interview/Useeffecthook";
 
 function App() {
   {
@@ -68,7 +69,8 @@ function App() {
       </select>
       <Clock colour={colour} /> */}
 
-      <Nestedloop/>
+      {/* <Nestedloop/> */}
+      <Useeffecthook/>
     </>
   );
 }
