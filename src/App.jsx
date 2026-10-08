@@ -17,6 +17,9 @@ import Toggle from "./interview/toggle";
 import Wrapper from "./interview/wrapper";
 import Nestedloop from "./interview/Nestedloop";
 import Useeffecthook from "./interview/Useeffecthook";
+import Hanpropeffect from "./interview/Hanpropeffect";
+import Internal from "./interview/Internal";
+import Inline from "./interview/Inline";
 
 function App() {
   {
@@ -70,7 +73,12 @@ function App() {
       <Clock colour={colour} /> */}
 
       {/* <Nestedloop/> */}
-      <Useeffecthook/>
+      {/* <Useeffecthook/> */}
+      {/* <Hanpropeffect/> */}
+
+      {/* CSS */}
+      {/* <Internal/> */}
+      <Inline/>
     </>
   );
 }

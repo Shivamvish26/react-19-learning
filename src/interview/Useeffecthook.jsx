@@ -3,13 +3,31 @@ import React, { useState, useEffect } from "react";
 export default function Useeffecthook() {
   const [count, setCount] = useState(0);
 
-  function handleClick() {
-    console.log("Function called once");
-  }
+  // function handleClick() {
+  //   setTimeout(() => {
+  //     console.log("Function called once");
+  //   }, 2000);
+  // }
 
-  useEffect(() => {
-    handleClick();
-  }, []);
+  //  dependency without array
+  // useEffect(() => {
+  //   handleClick();
+  // }, []);
+
+  // without dependency without array
+  //   useEffect(() => {
+  //   console.log("Effect runs");
+  // });
+
+  // dependency array with dependency
+  // useEffect(() => {
+  // console.log("Count...", count)
+  // }, [count]);
+
+  // handle props with useffect hook
+  useEffect(()=>{
+    
+  })
 
   return (
     <div>
