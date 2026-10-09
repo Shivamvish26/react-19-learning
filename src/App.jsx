@@ -20,6 +20,8 @@ import Useeffecthook from "./interview/Useeffecthook";
 import Hanpropeffect from "./interview/Hanpropeffect";
 import Internal from "./interview/Internal";
 import Inline from "./interview/Inline";
+import Inputvaluehook from "./interview/Inputvaluehook";
+import Scrollview from "./interview/Scrollview";
 
 function App() {
   {
@@ -75,10 +77,12 @@ function App() {
       {/* <Nestedloop/> */}
       {/* <Useeffecthook/> */}
       {/* <Hanpropeffect/> */}
+      {/* <Inputvaluehook/> */}
+      <Scrollview/>
 
       {/* CSS */}
       {/* <Internal/> */}
-      <Inline/>
+      {/* <Inline/> */}
     </>
   );
 }
