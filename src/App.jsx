@@ -22,6 +22,10 @@ import Internal from "./interview/Internal";
 import Inline from "./interview/Inline";
 import Inputvaluehook from "./interview/Inputvaluehook";
 import Scrollview from "./interview/Scrollview";
+import Getinputfilledvalues from "./interview/Getinputfilledvalues";
+import Userpropparents from "./interview/Userpropparents";
+import Video from "./interview/video";
+import Formstatus from "./interview/FormStatus";
 
 function App() {
   {
@@ -78,7 +82,11 @@ function App() {
       {/* <Useeffecthook/> */}
       {/* <Hanpropeffect/> */}
       {/* <Inputvaluehook/> */}
-      <Scrollview/>
+      {/* <Scrollview/> */}
+      {/* <Getinputfilledvalues/> */}
+      {/* <Userpropparents/> */}
+      {/* <Video/> */}
+      <Formstatus/>
 
       {/* CSS */}
       {/* <Internal/> */}

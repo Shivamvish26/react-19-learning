@@ -17,6 +17,7 @@ export default function GetinputfiledValue() {
   };
   return (
     <div>
+      <h1>Controlled Component</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="input">Enter Text</label>
         <br />
