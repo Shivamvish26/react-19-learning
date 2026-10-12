@@ -26,6 +26,10 @@ import Getinputfilledvalues from "./interview/Getinputfilledvalues";
 import Userpropparents from "./interview/Userpropparents";
 import Video from "./interview/video";
 import Formstatus from "./interview/FormStatus";
+import Transition from "./interview/Transition";
+import Derived from "./interview/Derived";
+import Liftingup from "./interview/Liftingup";
+import Liftingup2 from "./interview/Liftingup2";
 
 function App() {
   {
@@ -34,7 +38,7 @@ function App() {
   const [colour, setColor] = useState("black");
 
   //props
-  const name = "Shubham";
+  // const name = "Shubham";
 
   {
     /* Object with array */
@@ -47,6 +51,10 @@ function App() {
 
   // Array
   const skills = ["React", "JavaScript", "Node.js"];
+
+  // Lifting up state
+  const [name, setName]= useState("")
+
   return (
     <>
       {/* <IncDec/> */}
@@ -86,7 +94,13 @@ function App() {
       {/* <Getinputfilledvalues/> */}
       {/* <Userpropparents/> */}
       {/* <Video/> */}
-      <Formstatus/>
+      {/* <Formstatus/> */}
+      {/* <Transition/> */}
+      {/* <Derived/> */}
+
+      {/* Lifting up the state */}
+      <Liftingup name={name} setName={setName}/>
+      <Liftingup2 name={name}/>
 
       {/* CSS */}
       {/* <Internal/> */}
