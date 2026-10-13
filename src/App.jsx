@@ -30,6 +30,9 @@ import Transition from "./interview/Transition";
 import Derived from "./interview/Derived";
 import Liftingup from "./interview/Liftingup";
 import Liftingup2 from "./interview/Liftingup2";
+import Updatingstate from "./interview/Updatingstate";
+import UpdatingArray from "./interview/Updatingstatearray";
+import UseAction from "./interview/UseAction";
 
 function App() {
   {
@@ -99,8 +102,13 @@ function App() {
       {/* <Derived/> */}
 
       {/* Lifting up the state */}
-      <Liftingup name={name} setName={setName}/>
-      <Liftingup2 name={name}/>
+      {/* <Liftingup name={name} setName={setName}/>
+      <Liftingup2 name={name}/> */}
+
+      {/* <Updatingstate/> */}
+      {/* <UpdatingArray/> */}
+
+      <UseAction/>
 
       {/* CSS */}
       {/* <Internal/> */}
