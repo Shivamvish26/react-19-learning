@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 import CheckboxandDropdown from "./interview/CheckboxandDropdown";
 import Checkboxes from "./interview/Checkboxes";
@@ -33,6 +33,9 @@ import Liftingup2 from "./interview/Liftingup2";
 import Updatingstate from "./interview/Updatingstate";
 import UpdatingArray from "./interview/Updatingstatearray";
 import UseAction from "./interview/UseAction";
+import Useidhook from "./interview/UseIdhooks";
+import Navbar from "./interview/Contextfile/Navbar";
+import { ThemeContext } from "./interview/Contextfile/ThemecontextProvider";
 
 function App() {
   {
@@ -56,7 +59,10 @@ function App() {
   const skills = ["React", "JavaScript", "Node.js"];
 
   // Lifting up state
-  const [name, setName]= useState("")
+  const [name, setName] = useState("");
+
+  //context api
+  const { theme } = useContext(ThemeContext);
 
   return (
     <>
@@ -108,7 +114,19 @@ function App() {
       {/* <Updatingstate/> */}
       {/* <UpdatingArray/> */}
 
-      <UseAction/>
+      {/* <UseAction/> */}
+
+      {/* <Useidhook/> */}
+
+      {/* Context Api */}
+      <div className={`app ${theme}`}>
+        <Navbar />
+
+        <main>
+          <h1>Welcome to My Website!</h1>
+          <p>This website supports light and dark themes.</p>
+        </main>
+      </div>
 
       {/* CSS */}
       {/* <Internal/> */}

@@ -1,0 +1,29 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
