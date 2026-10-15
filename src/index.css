@@ -2,7 +2,9 @@
   min-height: 100vh;
   padding: 20px;
   font-family: Arial, sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .app.light {
@@ -26,4 +28,21 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #121212;
+}
+.navbar .navbar-links {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+a.active {
+  color: red;
 }

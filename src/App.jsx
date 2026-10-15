@@ -36,6 +36,14 @@ import UseAction from "./interview/UseAction";
 import Useidhook from "./interview/UseIdhooks";
 import Navbar from "./interview/Contextfile/Navbar";
 import { ThemeContext } from "./interview/Contextfile/ThemecontextProvider";
+import UseCounter from "./interview/CustomeHook/USeCounter";
+import Counter from "./interview/CustomeHook/Counter";
+import { Route, Routes } from "react-router";
+import Home from "./interview/RouterPage/Home";
+import About from "./interview/RouterPage/About";
+import Contact from "./interview/RouterPage/Contactus";
+import Navbars from "./interview/RouterPage/Navbar";
+import PagenotFound from "./interview/RouterPage/PagenotFound";
 
 function App() {
   {
@@ -119,14 +127,26 @@ function App() {
       {/* <Useidhook/> */}
 
       {/* Context Api */}
-      <div className={`app ${theme}`}>
+      {/* <div className={`app ${theme}`}>
         <Navbar />
 
         <main>
           <h1>Welcome to My Website!</h1>
           <p>This website supports light and dark themes.</p>
         </main>
-      </div>
+      </div> */}
+
+      {/* Custome hook */}
+      {/* <Counter/> */}
+
+      {/* React router */}
+      <Navbars/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="*" element={<PagenotFound />} />
+      </Routes>
 
       {/* CSS */}
       {/* <Internal/> */}
